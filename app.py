@@ -31,6 +31,7 @@ stat_options = {
     "Goals per match": "Goals per match",
     "Shots": "Shots",
     "Shots on target": "Shots on target",
+    "Shot Percentage": "Shot Percentage"
 }
 stat_friendly = st.sidebar.selectbox("Choose a statistic to visualize:", list(stat_options.keys()))
 stat_column = stat_options[stat_friendly]
@@ -111,4 +112,5 @@ with tab2:
 with tab3:
     st.subheader("Player Data Table")
     st.dataframe(filtered_df.reset_index(drop=True))
+
 
